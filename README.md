@@ -60,8 +60,7 @@ pip install torch torchvision
 ## Model Architecture
 
 The CNN model is defined as follows:
-```
-python
+```python
 
 import torch.nn as nn
 
@@ -91,8 +90,7 @@ class SimpleCNN(nn.Module):
 The training and evaluation of the model are conducted in the notebook. The training loop includes loss calculation and optimization using the Adam optimizer. Evaluation metrics, such as accuracy, are printed at the end of each epoch.
 
 ### Example of Training Loop:
-```
-python
+```python
 
 for epoch in range(num_epochs):
     model.train()  # Set the model to training mode
@@ -127,9 +125,7 @@ for epoch in range(num_epochs):
 
 The model's performance is evaluated on the test dataset, and accuracy metrics are printed to gauge the classification performance.
 
-```
-python
-
+```python
 print(f'Accuracy on the dataset: {100 * correct / total:.2f}%')
 ```
 
